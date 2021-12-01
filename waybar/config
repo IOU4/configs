@@ -1,0 +1,99 @@
+// vim:ft=jsonc
+{
+    "position": "left", // Waybar position (top|bottom|left|right)
+    "height": 10, // Waybar height (to be removed for auto height)
+    "width": 60, // Waybar width
+    "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "backlight", "battery", "tray", "network"],
+
+     "sway/workspaces": {
+         "disable-scroll": true,
+         "all-outputs": true,
+         "format": "{icon}",
+         "format-icons": {
+             "1terminal": "",
+             "2browser": "",
+             "3music": "",
+             "4extra": "",
+             "urgent": "",
+             "focused": "",
+             "default": ""
+         }
+     },
+    "sway/mode": {
+        "format": "<span style=\"italic\"><small>{}</small></span>"
+    },
+    "tray": {
+        "icon-size": 20,
+        "spacing": 0
+    },
+    "clock": {
+       "format":   "{:%H\n%M}",
+       "timezone": "Africa/Casablanca",
+       "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+       "format-alt": "{:%H\n%M\n--\n%d\n%m}"
+    },
+    "cpu": {
+        "format": "{usage}\n",
+        "tooltip": false
+    },
+    "backlight": {
+         "device": "acpi_video1",
+        "format": "{icon}  {percent}",
+        "format-icons": ["", "", ""]
+    },
+    "battery": {
+        "states": {
+             "good": 95,
+            "warning": 20,
+            "critical": 10
+        },
+        "full-at": 83,
+        "format": "{icon}  {capacity}",
+        "format-charging": "  {capacity}",
+        "format-plugged": "  {capacity}",
+        "format-alt": "{icon}  {time}",
+         "format-full": "  ",
+        "format-icons": ["", "", "", "", "","",""]
+    },
+    "battery#bat2": {
+        "bat": "BAT1"
+    },
+    "network": {
+        "interface": "wlp3s0", // (Optional) To force the use of this interface
+        "format-wifi": "{essid}",
+        "format-ethernet": "  {ipaddr}",
+        "format-linked": "{ifname}",
+        "format-disconnected": "睊  -- ",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "max-length": 3,
+        "format-icons": ["ﰐ", "ﰑ", "ﰒ"],
+        "tooltip": true,
+        "tooltip-format-wifi": "{essid}",
+        "tooltip-format-ethernet": "{ifname}: {ipaddr}/{cidr} "
+    },
+    "pulseaudio": {
+         "scroll-step": 1, // %, can be a float
+        "format": "{icon}  {volume}",
+        "format-bluetooth": "{icon}  {volume} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": "  --",
+        "format-source": "{volume}  ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    }
+
+}
+
+
+

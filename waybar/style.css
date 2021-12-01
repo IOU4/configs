@@ -1,0 +1,68 @@
+* {
+    font-family: FantasqueSansMono Nerd Font, Siji;
+}
+
+window#waybar {
+    background: rgba(26, 27, 38, 0.5);
+    color: #c0caf5;
+    opacity: 1;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+/* Workspaces */
+#workspaces button {
+    font-size: 30px;
+    color: #c0caf5;
+    border: none;
+    border-radius: 0px;
+    margin: 0 0 10px;
+}
+#workspaces button.urgent {
+    border-left : 4px solid red;
+    color : red;
+}
+
+#workspaces button:hover {
+    color: #1a1b26 ;
+    background-color: rgb(120, 130, 155);
+}
+
+#workspaces button.focused {
+    border-left : 4px solid #c0caf5;
+}
+
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#mode,
+#idle_inhibitor,
+#mpd {
+    margin: 10px 0;;
+    color: #c0caf5;
+    font-size: 20px;
+    
+}
+.modules-center {
+   font-size: 30px;
+}
+
+#network {
+    margin: 10px 0 0;;
+    font-size: 20px;
+}
+
+#network.disconnected {
+    padding: 0px;
+}

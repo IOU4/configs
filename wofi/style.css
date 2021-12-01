@@ -1,0 +1,49 @@
+/* 11:11 */
+
+window {
+margin: 5px;
+background-color: #1a1b26;
+color: #c0caf5;
+border: 1px solid #c0caf5;
+}
+
+#input {
+margin: 5px 5px 10px;
+background: none;
+border: 1px solid #c0caf5;
+color: #c0caf5;
+border-radius: 0px;
+}
+
+#entry:selected {
+border-radius: 0px;
+border: none;
+background-color: #c0caf5;
+margin: 0 5px;
+} 
+
+#text:selected {
+color: #1a1b26;
+}
+
+
+#inner-box {
+/* margin: 5px; */
+}
+
+#outer-box {
+margin: 5px;
+}
+
+#scroll {
+/* margin: 5px; */
+}
+
+#text {
+margin: 2px;
+} 
+
+#img {
+   margin-right: 10px;
+}
+
