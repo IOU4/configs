@@ -1,0 +1,63 @@
+syntax enable
+set nocompatible
+set path+=**
+set noerrorbells
+set relativenumber
+set nu
+set hidden
+set autoindent
+set tabstop=3 softtabstop=3
+set shiftwidth=3
+set expandtab
+set smartindent
+set nowrap
+set ignorecase
+set smartcase
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set nohlsearch
+set whichwrap+=<,>,[,]
+set noshowmode
+set cmdheight=1
+set laststatus=2
+set so=6
+set siso=20
+set showcmd
+set termguicolors "magic
+
+let mapleader=' '
+
+let g:tokyonight_style = 'storm'
+colorscheme tokyonight
+let g:tokyonight_enable_italic = 1
+
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+
+
+
+source $HOME/.vim/lightline-conf.vim
+source $HOME/.vim/nerdcommenter.vim
+
+
+"remap
+nnoremap <silent><leader>f :FZF<CR>
+nnoremap <silent><leader>l :wincmd l<CR>
+nnoremap <silent><leader>h :wincmd h<CR>
+nnoremap <silent><leader>k :wincmd k<CR>
+nnoremap <silent><leader>j :wincmd j<CR>
+nnoremap <silent><leader>tn :tabnext <CR>
+nnoremap <silent><leader>tp :tabprevious <CR>
+nnoremap <silent><leader>tc :tabclose <CR>
+nnoremap <silent><leader>tt :tabnew <CR>
+nnoremap <silent><leader>e :20Vexplore<CR>
+
+
+
+filetype plugin on

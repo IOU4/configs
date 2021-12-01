@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/imadou/.vim/pack/plugis/start/tokyonight/colors'
+let g:netrw_dirhist_7='/home/imadou/.vim/pack/plugis/start/tokyonight'
+let g:netrw_dirhist_6='/home/imadou/gits/os-tutorial/04-bootsector-stack'
+let g:netrw_dirhist_5='/home/imadou/gits/os-tutorial/02-bootsector-print'
+let g:netrw_dirhist_4='/home/imadou/gits/os-tutorial/01-bootsector-barebones'
+let g:netrw_dirhist_3='/home/imadou/gits/os-tutorial/05-bootsector-functions-strings'
+let g:netrw_dirhist_2='/home/imadou/gits/os-tutorial'
+let g:netrw_dirhist_1='/home/imadou/gists/bubble_sort'
+let g:netrw_dirhist_0='/home/imadou/gists'
+let g:netrw_dirhist_9='/home/imadou/gists/bubble_sort'

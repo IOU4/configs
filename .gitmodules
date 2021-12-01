@@ -1,0 +1,15 @@
+[submodule ".vim/pack/plugis/start/tokyonight"]
+	path = .vim/pack/plugis/start/tokyonight
+	url = https://github.com/ghifarit53/tokyonight-vim
+[submodule ".vim/pack/vendor/start/nerdtree"]
+	path = .vim/pack/vendor/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule ".vim/pack/vendor/start/nerdcommenter"]
+	path = .vim/pack/vendor/start/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter
+[submodule ".vim/pack/coc/start/coc.nvim"]
+	path = .vim/pack/coc/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule ".vim/pack/plugis/start/lightline"]
+	path = .vim/pack/plugis/start/lightline
+	url = https://github.com/itchyny/lightline.vim.git
